@@ -16,15 +16,17 @@ const LeagueDetail = () => {
         .then(res => res.json())
         .then(data => setLeagueDetails(data.leagues[0]) )
         
-    },[])
+    },[idLeague])
+    const {strBadge,intFormedYear,strCountry,strSport,strGender,strFanart4,strDescriptionEN,strFacebook,strTwitter,strYoutube} =leagueDetails;
     
     return (
+    
         
         <div className="container">
             <section className= "banar-and-logo w-100">
             
         <section className='hero-header-text'>
-            <img height={200}  src={leagueDetails.strBadge} alt=""/>
+            <img height={200}  src={strBadge} alt=""/>
             
         </section>
         
@@ -34,10 +36,10 @@ const LeagueDetail = () => {
             <Media className="col-md-12 ">
           <Media.Body>
             <h1>{leagueDetails.strLeague}</h1>
-            <p><FontAwesomeIcon icon={faPenFancy} /> Founded in {leagueDetails.intFormedYear}</p>
-                 <p><FontAwesomeIcon icon={faFlag} /><strong> Country:</strong> {leagueDetails.strCountry}</p>
-                 <p><FontAwesomeIcon icon={faRunning} /><strong> Sport Type:</strong> {leagueDetails.strSport}</p>
-                 <p><FontAwesomeIcon icon={faMars} /><strong> Gender:</strong> {leagueDetails.strGender}</p>
+            <p><FontAwesomeIcon icon={faPenFancy} /> Founded in {intFormedYear}</p>
+                 <p><FontAwesomeIcon icon={faFlag} /><strong> Country:</strong> {strCountry}</p>
+                 <p><FontAwesomeIcon icon={faRunning} /><strong> Sport Type:</strong> {strSport}</p>
+                 <p><FontAwesomeIcon icon={faMars} /><strong> Gender:</strong> {strGender}</p>
           </Media.Body>
           {
               leagueDetails.strGender === 'Male'
@@ -45,26 +47,26 @@ const LeagueDetail = () => {
               width={600}
               height={300}
               className="ml-4"
-              src={leagueDetails.strFanart4}
+              src={strFanart4}
               alt="Generic placeholder"
               />
               :<img className="img-fluid"
               width={600}
               height={300}
               className="ml-3"
-              src={leagueDetails.strFanart4}
+              src={strFanart4}
               alt="Generic placeholder"
               />
           }
           
         </Media>
             </div>
-            <p>{leagueDetails.strDescriptionEN}</p>
+            <p>{strDescriptionEN}</p>
 
             <footer className="footer">
-            <a href={`https://${leagueDetails.strFacebook}`}><FontAwesomeIcon icon={faFacebookSquare} /></a>
-            <a href={`https://${leagueDetails.strTwitter}`}><FontAwesomeIcon icon={faTwitterSquare} /></a>
-            <a href={`https://${leagueDetails.strYoutube}`}><FontAwesomeIcon icon={faYoutubeSquare} /></a>
+            <a href={`https://${strFacebook}`}><FontAwesomeIcon icon={faFacebookSquare} /></a>
+            <a href={`https://${strTwitter}`}><FontAwesomeIcon icon={faTwitterSquare} /></a>
+            <a href={`https://${strYoutube}`}><FontAwesomeIcon icon={faYoutubeSquare} /></a>
             </footer>
                 
 

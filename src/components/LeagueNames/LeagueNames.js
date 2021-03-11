@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Button, Container} from 'react-bootstrap'
 import { useHistory } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import leagueNameCss from './LeagueNames.css'
 
 const LeagueNames = (props) => {

@@ -15,7 +15,7 @@ const Home = () => {
         <div>
             <header className="w-100">
         <section className='hero-header-text'>
-            <h1>Sports Mania</h1>
+            <h1>Leaguepedia</h1>
             
         </section>
         </header>

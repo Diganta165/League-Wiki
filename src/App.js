@@ -11,7 +11,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import LeagueDetail from './components/LeagueDetail/LeagueDetail';
 import NoMatch from './components/NoMatch/NoMatch';
-import { Card } from 'react-bootstrap';
+
 
 function App() {
   return (
