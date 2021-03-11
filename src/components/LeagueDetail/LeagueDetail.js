@@ -53,7 +53,7 @@ const LeagueDetail = () => {
               :<img className="img-fluid"
               width={600}
               height={300}
-              className="ml-3"
+              className="ml-4"
               src={strFanart4}
               alt="Generic placeholder"
               />
