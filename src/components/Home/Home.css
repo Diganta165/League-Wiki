@@ -1,0 +1,13 @@
+header {
+    color: white;
+    height: 200px;
+    width: 100vw;
+    background:black;
+    overflow: hidden;
+    background: #C33764; 
+    background: -webkit-linear-gradient(rgba(132, 138, 196, 0.8), rgba(63, 25, 37, 0.8)), url("/src/components/Photos/background-stadium.jpg");
+    
+  }
+  img {
+   object-fit: cover;
+  }

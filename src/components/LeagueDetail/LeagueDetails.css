@@ -1,0 +1,43 @@
+/* .information-and-image-column{
+    background-color: blue;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.information-column{
+    margin-top:10px;
+    color:white;
+}
+.image-column image{
+    max-height: 200px;
+      max-width: 200px;
+      object-fit: cover;
+} */
+
+.information-box{
+    margin-top:10px;
+    background-color:blue;
+    border-radius: 5px;
+    margin-bottom: 5px ;
+    color:white
+}
+
+.banar-and-logo {
+    color: white;
+    height:200px;
+    width: auto;
+    background:black;
+    overflow: hidden;
+    background: #C33764; 
+    background: -webkit-linear-gradient(rgba(241, 241, 243, 0.8), rgba(190, 26, 78, 0.8)), url("/src/components/Photos/background-stadium.jpg");
+    
+  }
+  img {
+   object-fit: cover;
+  }
+ .footer a{
+      height:50px;
+      text-align: center;
+      margin-left: 10px;
+  }
